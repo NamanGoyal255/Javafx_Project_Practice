@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mypack.ViewController">
+   <children>
+      <Button layoutX="219.0" layoutY="220.0" mnemonicParsing="false" onAction="#doSum" text="Sum" />
+      <Label layoutX="155.0" layoutY="47.0" text="C++" />
+      <Label layoutX="155.0" layoutY="93.0" text="DSA" />
+      <TextField fx:id="txtcpp" layoutX="209.0" layoutY="52.0" promptText="Enter marks in cpp">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtdsa" layoutX="209.0" layoutY="89.0" />
+      <TextField fx:id="txttotal" layoutX="209.0" layoutY="302.0" />
+      <Label layoutX="112.0" layoutY="306.0" text="Total" />
+      <Label layoutX="153.0" layoutY="143.0" text="java" />
+      <TextField fx:id="txtjava" layoutX="185.0" layoutY="131.0" />
+      <Button fx:id="btnper" disable="true" layoutX="293.0" layoutY="220.0" mnemonicParsing="false" text="per" />
+      <Separator layoutX="1.0" layoutY="275.0" prefHeight="2.0" prefWidth="590.0" />
+   </children>
+</AnchorPane>

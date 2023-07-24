@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bill.ngController">
+   <children>
+      <Label layoutX="220.0" layoutY="29.0" text="Shopping Complex" />
+      <CheckBox fx:id="chkall" layoutX="66.0" layoutY="81.0" mnemonicParsing="false" onAction="#docheckall" text="Select All" />
+      <CheckBox fx:id="chkpen" layoutX="92.0" layoutY="123.0" mnemonicParsing="false" text="Pen    --20Rs" />
+      <CheckBox fx:id="chkbook" layoutX="93.0" layoutY="156.0" mnemonicParsing="false" text="Books  --200Rs" />
+      <CheckBox fx:id="chkbag" layoutX="93.0" layoutY="191.0" mnemonicParsing="false" text="Bag --900Rs" />
+      <Button fx:id="btnbill" layoutX="114.0" layoutY="231.0" mnemonicParsing="false" onAction="#dobill" prefHeight="26.0" prefWidth="59.0" text="Bill" />
+      <Separator layoutX="12.0" layoutY="272.0" prefHeight="3.0" prefWidth="582.0" />
+      <Separator layoutX="20.0" layoutY="375.0" prefHeight="3.0" prefWidth="582.0" />
+      <Label layoutX="50.0" layoutY="275.0" prefHeight="26.0" prefWidth="31.0" text="Items" />
+      <Label layoutX="50.0" layoutY="310.0" text="Prices" />
+      <Label layoutX="39.0" layoutY="337.0" text="Total Price" />
+      <TextField fx:id="txtitems" layoutX="98.0" layoutY="275.0" />
+      <TextField fx:id="txttot" layoutX="99.0" layoutY="333.0" />
+      <TextField fx:id="txtprices" layoutX="99.0" layoutY="306.0" />
+      <RadioButton fx:id="rad10" layoutX="130.0" layoutY="420.0" mnemonicParsing="false" text="10%">
+         <toggleGroup>
+            <ToggleGroup fx:id="kuch" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rad20" layoutX="365.0" layoutY="420.0" mnemonicParsing="false" text="20%" toggleGroup="$kuch" />
+      <Button layoutX="245.0" layoutY="458.0" mnemonicParsing="false" onAction="#doend" text="Net Bill" />
+      <Label layoutX="249.0" layoutY="388.0" text="Discount" />
+      <Label layoutX="85.0" layoutY="557.0" text="Discount" />
+      <Label layoutX="81.0" layoutY="602.0" text="NetBill" />
+      <TextField fx:id="txtdisc" layoutX="146.0" layoutY="553.0" />
+      <TextField fx:id="txtnb" layoutX="146.0" layoutY="598.0" />
+      <Separator layoutY="515.0" prefHeight="3.0" prefWidth="700.0" />
+      <Separator layoutX="3.0" layoutY="671.0" prefHeight="3.0" prefWidth="700.0" />
+   </children>
+</AnchorPane>
